@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets colaborate/Raffle</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+    rel="stylesheet">  
+</head>
+<body>
+    <div class="layout">
+        <header>
+            <div>
+                <nav class="navbar">
+                    <section>
+                        <a href="./index.html">Home</a>
+                        <a href="./aboutUs.html">Known Us</a>
+                        <a href="./contact.html">Lets Talk</a>
+                        <a href="./information.html">More</a>
+                        <a href="./benefitstips.html">Healthy</a>
+                        <a href="#" id="active">Lets collaborate</a>
+                    </section>
+                    <aside>
+                        <img src="./logo.png" height="51" alt="">
+                    </aside>
+                </nav>
+            </div>
+            <div class="titulo">
+                <h1>Raffle</h1>
+                <h2 class="sub">You can collaborate to hold an exhibition event
+                    and participate in a raffle to win an ease!
+                </h2>
+            </div>
+        </header>
+        <main>
+            <div class="negocio">
+                <div class="map">
+                    <p>Our location is located at:</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38635.69145627673!2d-118.34352215659185!3d33.74184645574294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd49b4bcde547b%3A0xd7cae244c2c4c132!2sRoyal%20Palms%20Beach%20Park!5e0!3m2!1ses-419!2sco!4v1718298669404!5m2!1ses-419!2sco"
+                            class="mapa" height=""  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="formulario">
+                    <form action="./show_data.html" method="get">
+                        <fieldset>
+                            <label for="" class="form">
+                                First Name
+                                <input type="text" name="first name" required>
+                            </label>
+                            <label for="" class="form">
+                                Last Name
+                                <input type="text" name="last name" required>
+                            </label>
+                            <label for="" class="form">
+                                Where you want we talk?
+                                <select name="app" id="caja" required>
+                                    <option value="zoom">zoom</option>
+                                    <option value="meet">meet</option>
+                                </select>
+                            </label>
+                            <label for="" class="form">
+                                When we can talk?
+                                <input type="date" name="date" id="caja" required>
+                            </label>
+                            <label for="" class="form">
+                                Payment Options
+                                <span class="pay">
+                                    <label for="" class="radioopt">
+                                        <input type="radio" name="pay" value="cash" required>
+                                        cash
+                                    </label>
+                                    <label for="" class="radioopt">
+                                        <input type="radio" name="pay" value="credit card" required>
+                                        credit card
+                                    </label>
+                                    <label for="" class="radioopt">
+                                        <input type="radio" name="pay" value="debit card" required>
+                                        dedit card
+                                    </label>
+                                </span>
+                            </label>
+                            <label for="" class="form">
+                                Message (Optional)
+                                <textarea name="Message" id=""></textarea>
+                            </label>
+                            <label for="" class="side">
+                                <input type="checkbox" id="checkbox" required>
+                                I accept terms and conditions..
+                                <button type="submit">Send</button>
+                            </label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Created by: Cristian Osorio
+        </footer>
+    </div>
+</body>
+</html>
