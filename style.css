@@ -8,7 +8,7 @@
     display: flex;
     background-color: #F2A9A2;
     flex-direction: column;
-    width: 100%;
+    min-width: 100%;
     min-height: 100vh;
 }
 /* pagina1 */
@@ -17,11 +17,14 @@
         width: 100%;
         min-height: 15vh;
     }
+    header img{
+        max-width: 52px;
+    }
     .navbar{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         height: auto;
         background-color: #F25C5C;
         padding: 9px;
@@ -53,7 +56,6 @@
     h1, h2{
         padding: 6px;
     }
-
     /* main */
     main{
         width: 100%;
@@ -67,6 +69,7 @@
         height: auto;
     }
     .banner img{
+        width: 450px;
         border: 3px solid #F2F2F0;
         border-radius: 15px;
         box-shadow: 0 0 10px 1px #465952;
@@ -85,11 +88,11 @@
         color: #F2F2F0;
     }
     .info img{
+        width: 70%;
         border: 3px solid #F2F2F0;
         border-radius: 15px;
         box-shadow: 0 0 10px 1px #465952;
     }
-
     /* footer */
     footer{
         width: 100%;
@@ -115,6 +118,7 @@
         padding: 21px;
     }
     .seccion img{
+        width: 150px;
         border: 3px solid #F2F2F0;
         border-radius: 15px;
         box-shadow: 0 0 10px 1px #575756;
@@ -158,12 +162,12 @@
         width: 100%;
         height: auto;
         margin: 12px;
-        padding: 50px;
+        padding: 51px;
     }
     .contacto p{
         margin: 0;
-        padding: 12px;
-        font-size: 24px;
+        padding: 51px;
+        font-size: 100%;
         border: 1px solid #e9928a;
         border-radius: 24px;
         background-color: #e9928a;
@@ -175,17 +179,17 @@
     .tabla{
         display: flex;
         justify-content: center;
+        width: 95%;
     }
     table{
         border-collapse: collapse;
-        margin: 20px;
-        padding: 20px;
+        margin: 5%;
         text-align: center;
         color: #F2F2F0;
     }
     td{
         border: 3px solid #e9928a;
-        padding: 50px;
+        padding: 5vw;
         box-shadow: 0 0 10px 10px #e9928a;
     }
 
@@ -244,6 +248,7 @@
         height: auto;
     }
     .imagen img{
+        width: 90%;
         border: 3px solid #F2F2F0;
         border-radius: 15px;
         box-shadow: 0 0 10px 1px #465952;
@@ -301,9 +306,9 @@
         text-align: center;
     }
     button{
-        width: 10%;
+        width: 10vh;
         height: auto;
-        margin: 0 0 0 10%;
+        margin: 0 0 0 3vh;
     }
     .pay{
         display: flex;
@@ -319,5 +324,98 @@
         margin: 0 1% 0 0;
     }
 
-/* responsive */
-    
+    /* responsive */
+    @media  (max-width: 1024px){
+    /* Pág 1 */
+        /* header */
+        .navbar{
+            flex-direction: column-reverse;
+        }
+        .navbar section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vh;
+        }
+        .titulo {
+            margin: 52vh 0 0 0;
+        }
+        /* main */      
+        .info{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+        .banner img{
+            width: 90%;
+        }
+    /* Pág 2 */
+        .infous{
+            width: 100%;
+        }
+        .seccion img{
+            width: 90%;
+        }
+        .seccion{
+            flex-direction: column;
+            gap: 1%;
+            margin: 5%;
+        }
+    /* Pág 3 */
+        /* main */
+        .infocontacto{
+            text-align: center;
+        }
+        .contacto{
+            flex-direction: column;
+            width: 100%;
+            margin: 1%;
+            padding: 15%;
+        }
+        .contacto p{
+            margin: 5% 0 5% 0;
+            padding: 10%;
+        }
+    /* pagina5 */
+        /* main */
+        .descripcion{
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 90%;
+            margin: 1vh;
+        }
+        .texto{
+            font-size: 90%;
+            margin: 0;
+            padding: 5%;
+            width: 100%;
+        }
+        .imagen{
+            width: 90%;
+            margin: 2vh;
+        }
+        .imagen img{
+            width: 95%;
+        }
+
+    /* pagina6 */
+        /* main */
+        .negocio{
+            flex-direction: column-reverse;
+            align-items: center;
+            margin: 25vh 0 0 0;
+        }
+        .map, .formulario{
+            width: 100%;
+            margin: 6vh;
+        }
+        .map p{
+            text-align: center; 
+        }
+        .mapa{
+            width: 90%;
+            height: 90%;
+        }
+        fieldset{
+            width: 100%;
+        }
