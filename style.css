@@ -211,33 +211,29 @@
     }
     .texto{
         display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 50%;
         height: auto;
-        text-align: center;
+        margin: auto;
     }
-    .texto p{
+    .descripcion dl{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding-left: 10%;
+        color: #F2F2F0;       
+    }
+    .descripcion dt{
+        list-style: none;
         width: 100%;
         height: auto;
     }
-    .descripcion ol{
-        display: flex;
-        flex-direction: column;
+    .descripcion li{
         width: 100%;
         height: auto;
         text-align: left;
-        align-items: center;
-        padding-left: 6%;
-    }
-    .calificacion{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        justify-content: center;
+        list-style: disc;
+        padding-left: 10%;
     }
     .imagen{
         display: flex;
@@ -251,25 +247,6 @@
         border: 3px solid #F2F2F0;
         border-radius: 15px;
         box-shadow: 0 0 10px 1px #465952;
-    }
-    .beneficios{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 60px;
-    }
-    ul{
-        list-style: none;
-        width: 80vh;
-        height: auto;
-        margin: 10px;
-        color: #F2F2F0;
-    }
-    .dd{
-        list-style-type: disc;
-        list-style-position: inside;
-        padding-left: 20px;
     }
 
 /* pagina6 */
